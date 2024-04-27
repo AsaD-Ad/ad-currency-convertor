@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import inquirer from "inquirer";
 let currencyList = [
     "USD",
@@ -46,7 +47,7 @@ let user_answer = await inquirer.prompt([
 ]);
 let fromAmount = currency[user_answer.from];
 let toAmount = currency[user_answer.to];
-let amount = currency[user_answer.selectamount];
+let amount = user_answer.selectamount;
 let baseAmount = amount / fromAmount;
 let convertedAmount = baseAmount * toAmount;
 console.log(convertedAmount);
