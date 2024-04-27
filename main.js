@@ -2,11 +2,11 @@
 import inquirer from "inquirer";
 let currencyList = [
     "USD",
-    "AFN",
     "BDT",
     "CNY ",
     "INR ",
     "PKR ",
+    "AFN",
 ];
 const currency = {
     USD: 1,
@@ -22,11 +22,11 @@ let user_answer = await inquirer.prompt([
         message: "Select currency from which you want to exchange",
         type: "list",
         choices: ["USD",
-            "AFN",
             "BDT",
             "CNY ",
             "INR ",
-            "PKR ",],
+            "PKR ",
+            "AFN"],
     },
     {
         name: "to",
