@@ -4,11 +4,11 @@ import inquirer from "inquirer"
 
  let currencyList = [
     "USD",
-    "AFN",
     "BDT",
     "CNY ",
     "INR ",
     "PKR ",
+    "AFN",
 ];
 const currency : any = {
     USD : 1,
